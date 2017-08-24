@@ -3,9 +3,9 @@ FROM gcr.io/tensorflow/tensorflow:latest-devel-gpu-py3
 
 RUN apt-get update && \
 	apt-get install less emacs -y && \
-	apt-get install libtcmalloc-minimal4 && \
-	apt-get install cmake && \
-	apt-get install zlib1g-dev && \
+	apt-get install libtcmalloc-minimal4 -y && \
+	apt-get install cmake -y && \
+	apt-get install zlib1g-dev -y && \
 	rm -rf /root/.cache && \
 	apt-get clean && \
 	rm -rf /var/lib/apt/lists/*
