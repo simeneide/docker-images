@@ -13,7 +13,7 @@ RUN apt-get update && \
 RUN pip3 --no-cache-dir install \
 	keras \
 	jupyterlab \
-	http://download.pytorch.org/whl/cu80/torch-0.2.0.post1-cp35-cp35m-manylinux1_x86_64.whl \
+	http://download.pytorch.org/whl/cu75/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl \
 	torchvision \
 	gym[atari] \
 	joblib
