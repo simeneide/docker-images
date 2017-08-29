@@ -1,4 +1,4 @@
-FROM gcr.io/tensorflow/tensorflow:latest-devel-gpu-py3
+FROM gcr.io/tensorflow/tensorflow:latest-devel-cpu-py3
 
 
 RUN apt-get update && \
